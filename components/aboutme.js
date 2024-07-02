@@ -1,5 +1,4 @@
 export function AboutMe(){
-    return(
-        
-    )
+    return
+        <div>AboutMe</div>;
 }
