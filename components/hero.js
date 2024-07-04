@@ -1,3 +1,5 @@
-export function Hero(){
-    return <div>Hero</div>;
+export function Hero({name,age}) {
+    
+    return <div>{name}</div>;
+            
 }
