@@ -2,7 +2,7 @@ import { FiSun } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
 export function Header() {
   return (
-    <div className="flex justify-between bg-slate-900 text-white">
+    <div className="flex justify-between bg-slate-400 text-white">
       <div>Logo</div>
       <div className="flex justify-between gap-5">
         <div className="hidden lg:flex gap-10">
@@ -21,3 +21,5 @@ export function Header() {
     </div>
   );
 }
+
+
