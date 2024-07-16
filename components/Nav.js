@@ -1,5 +1,6 @@
 import { FiSun } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
+
 export function Header() {
   return (
     <div className="flex justify-between bg-slate-400 text-white">
@@ -13,13 +14,13 @@ export function Header() {
         </div>
 
         <div className="hidden lg:flex gap-10">
-          <FiSun className="text-[black] size-10" />
+          <FiSun id="White" className="text-[black] size-10" onClick={()=>{document.getElementById("White").style.display="none"}} />
           <button className="bg-slate-800 text-white">Dowload CV</button>
         </div>
       </div>
-      <div className="lg:hidden"><IoMenu className="size-6"/></div>
+      <div className="lg:hidden">
+        <IoMenu className="size-6" />
+      </div>
     </div>
   );
 }
-
-

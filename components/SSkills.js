@@ -10,7 +10,7 @@ export function Skills() {
         The skills, tools and technologies I am really good at:
       </p>
       <div className="mt-6">
-       <Render_skills/>
+        <Render_skills />
       </div>
     </div>
   );

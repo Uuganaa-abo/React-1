@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 export function AboutMe() {
   return (
     <div className="mt-16 flex flex-col justify-center">
@@ -7,9 +8,14 @@ export function AboutMe() {
       </p>
       <div className="lg:flex  gap-12">
         <div className="flex justify-center mt-6 flex-1">
-            <div className="flex-1 flex justify-center">
-                 <Image src="/SPic.png" width={280} height={360} className="lg:w-[400px]"/>
-            </div>
+          <div className="flex-1 flex justify-center">
+            <Image
+              src="/SPic.png"
+              width={280}
+              height={360}
+              className="lg:w-[400px]"
+            />
+          </div>
         </div>
         <div className="mt-12 flex flex-1 flex-col gap-6">
           <h3 className="font-semibold text-2xl">
