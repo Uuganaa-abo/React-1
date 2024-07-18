@@ -10,10 +10,10 @@ export function AboutMe() {
         <div className="flex justify-center mt-6 flex-1">
           <div className="flex-1 flex justify-center">
             <Image
-              src="/SPic.png"
+              src={"/SPic.png"}
               width={280}
               height={360}
-              className="lg:w-[400px]"
+              className="lg:w-[400px] h-[480]"
             />
           </div>
         </div>

@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div>
       <div className="mt-16 flex justify-center">
-        <Image src="/images/Pic.png " width={240} height={280} />
+        <Image src="/Pic.png" width={240} height={280} />
       </div>
       <>
         <h2 className="font-semibold text-4xl size text-gray-900 mt-12">
