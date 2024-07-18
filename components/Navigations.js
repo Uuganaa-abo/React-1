@@ -21,7 +21,7 @@ const items = [
 
 export function Item() {
   return (
-    <div className="flex flex-col gap-4 font-bold text-base">
+    <div className="gap-4 flex flex-col font-bold text-base lg:flex-row">
       {items.map((item) => (
         <Link key={item.link} href={item.link} className="text-slate-500 ">
           {item.name}

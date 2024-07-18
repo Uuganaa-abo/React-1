@@ -3,6 +3,7 @@ import { IoMenu } from "react-icons/io5";
 import { Menu } from "./MobileMenu";
 // import Test from "./Test";
 import { useState } from "react";
+import { Item } from "./Navigations";
 
 export function Header() {
   // const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,7 @@ export function Header() {
       <div className="font-extrabold text-2xl">&lt;SS/&gt;</div>
       <div className="flex justify-between gap-5">
         <div className="hidden lg:flex gap-10">
-          <div>About</div>
-          <div>Work</div>
-          <div>Testimonials</div>
-          <div>Contact</div>
+          <Item className="lg:flex-row" />
         </div>
 
         <div className="hidden lg:flex gap-10">
@@ -30,7 +28,7 @@ export function Header() {
               document.getElementById("White").style.display = "none, bg";
             }}
           />
-          <button className="bg-slate-800 text-white">Dowload CV</button>
+          <button className="bg-slate-800 text-white rounded-lg p-2">Dowload CV</button>
         </div>
       </div>
       <div className="lg:hidden">

@@ -30,7 +30,7 @@ const experiences = [
 ];
 export default function Experience() {
   return (
-    <main >
+    <main className="mt-16" >
       <div className="w-[100%] bg-slate-200 py-5 flex flex-col items-center">
       <div>
         <p className="text-center bg-gray-300 rounded-xl px-5 py-1 font-normal text-sm text-gray-600 w-28 m-auto">Experience</p>
