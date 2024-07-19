@@ -7,13 +7,13 @@ export function AboutMe() {
         About me
       </p>
       <div className="lg:flex  gap-12">
-        <div className="flex justify-center mt-6 flex-1">
-          <div className="flex-1 flex justify-center">
+        <div className="flex justify-center mt-14 flex-1">
+          <div className="shadow w-[280px] h-[360px] bg-gray-200 relative lg:mt-14">
             <Image
               src={"/SPic.png"}
               width={280}
               height={360}
-              className="lg:w-[400px] h-[480]"
+              className="absolute bottom-[20px] left-[20px] lg:w-[400px] h-[480]"
             />
           </div>
         </div>

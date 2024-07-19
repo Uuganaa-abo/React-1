@@ -4,6 +4,7 @@ import { Menu } from "./MobileMenu";
 // import Test from "./Test";
 import { useState } from "react";
 import { Item } from "./Navigations";
+import { FiMoon } from "react-icons/fi";
 
 export function Header() {
   // const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +14,8 @@ export function Header() {
   // };
 
   return (
-    <div className="flex justify-between bg-slate-400 text-white sticky top-0">
-      <div className="font-extrabold text-2xl">&lt;SS/&gt;</div>
+    <div className="flex justify-between bg-slate-200 text-white sticky top-0 z-50 lg:p-1">
+      <div className="font-extrabold text-2xl text-black">&lt;SS/&gt;</div>
       <div className="flex justify-between gap-5">
         <div className="hidden lg:flex gap-10">
           <Item className="lg:flex-row" />
@@ -28,7 +29,10 @@ export function Header() {
               document.getElementById("White").style.display = "none, bg";
             }}
           />
-          <button className="bg-slate-800 text-white rounded-lg p-2">Dowload CV</button>
+          <FiMoon  className="size-10"/>
+          <button className="bg-slate-800 text-white rounded-xl p-2">
+            Dowload CV
+          </button>
         </div>
       </div>
       <div className="lg:hidden">

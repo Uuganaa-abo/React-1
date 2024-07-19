@@ -2,18 +2,20 @@ import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
 import { GoDotFill } from "react-icons/go";
 import { FiGithub } from "react-icons/fi";
-import { CiTwitter } from "react-icons/ci";
+import { LuTwitter } from "react-icons/lu";
 import { FaFigma } from "react-icons/fa";
 import { AboutMe } from "./AboutM";
-
+import Icons from "./Icons";
 
 export function Hero() {
   return (
-    <div>
-      <div className="mt-16 flex justify-center">
-        <Image src="/Pic.png" width={240} height={280} />
+    <div className="lg:flex flex-row-reverse">
+      <div className="mt-16 flex justify-center flex-1">
+        <div className="w-[240px] h-[280px] bg-gray-200 relative">
+          <Image src="/Pic.png" width={240} height={280} className="shadow absolute top-[-20px] left-[20px] lg:mt-10 left-[-20px] " />
+        </div>
       </div>
-      <>
+      <div className="flex-1">
         <h2 className="font-semibold text-4xl size text-gray-900 mt-12">
           Hi, I’m Sagar 👋
         </h2>
@@ -37,11 +39,9 @@ export function Hero() {
           </div>
         </div>
         <div className="flex gap-4 mt-12 ">
-          <FiGithub className="size-6" />
-          <CiTwitter className="size-6" />
-          <FaFigma className="size-6" />
+          <Icons />
         </div>
-      </>
+      </div>
     </div>
   );
 }

@@ -23,35 +23,33 @@ export function Menu() {
         <IoMenu className="size-9" />
       </button>
       <div
-        className={`fixed transition-all inset-0 bg-slate-500/90 ${open === true ? "block" : "hidden"
-          }`}
+        className={`fixed transition-all inset-0 bg-slate-500/90 ${
+          open === true ? "block" : "hidden"
+        }`}
       ></div>
       <div
-        className={`fixed top-0 bottom-0 transition-all w-64 text-black bg-white shadow-lg ${open ? "right-0" : "-right-full"
-          }`}
+        className={`fixed top-0 bottom-0 transition-all w-64 text-black bg-white shadow-lg ${
+          open ? "right-0" : "-right-full"
+        }`}
       >
-        <div className="p-4">
-          <div className="flex flex-col gap-4">
-            <div className="flex justify-between">
-              <div className="font-extrabold text-2xl">&lt;SS/&gt;</div>
-              <button onClick={closeMenu} className="">
-                <IoIosCloseCircle className="size-9" />
-              </button>
-            </div>
-            <Item />
+        <div className="p-3">
+          <div className="flex justify-between">
+            <div className="font-extrabold text-2xl">&lt;SS/&gt;</div>
+            <button onClick={closeMenu} className="">
+              <IoIosCloseCircle className="size-9" />
+            </button>
           </div>
-          <div className="p-4">
-            <div className="flex justify-between mt">
-              <p>Switch Theme</p>
-              <div>
-                <FiSun />
-                <FiMoon />
-              </div>
-            </div>
-            <div className="flex  justify-center mt-4">
-              <button className="bg-slate-800 text-white rounded-lg p-2">Dowload CV</button>
+          <Item />
+          <div className="flex justify-between mt-3 p-2">
+            <p>Switch Theme</p>
+            <div>
+            <FiSun />
+            <FiMoon />
             </div>
           </div>
+          <button className="bg-slate-800 text-white rounded-xl p-2 w-full mt-3">
+            Dowload CV
+          </button>
         </div>
       </div>
     </div>
