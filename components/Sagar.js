@@ -11,12 +11,12 @@ export function Hero() {
   return (
     <div className="lg:flex flex-row-reverse">
       <div className="mt-16 flex justify-center flex-1">
-        <div className="w-[240px] h-[280px] bg-gray-200 relative">
-          <Image src="/Pic.png" width={240} height={280} className="shadow absolute top-[-20px] left-[20px] lg:mt-10 left-[-20px] " />
+        <div className="w-[280px] h-[280px] bg-gray-200 relative lg:w-[240px]">
+          <Image src="/Pic.png" width={240} height={280} className="shadow absolute top-[-20px] left-[20px] lg:top-[-10] lg:left-[-20px]" />
         </div>
       </div>
       <div className="flex-1">
-        <h2 className="font-semibold text-4xl size text-gray-900 mt-12">
+        <h2 className="font-semibold text-4xl size text-gray-900 mt-12 dark:text-white">
           Hi, I’m Sagar 👋
         </h2>
         <div className="mt-12">

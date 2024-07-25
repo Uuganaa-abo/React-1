@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutMe() {
   return (
-    <div className="mt-16 flex flex-col justify-center">
+    <div id="about" className="mt-16 flex flex-col justify-center">
       <p className="text-center bg-gray-300 rounded-xl px-5 py-1 font-normal text-sm text-gray-600 w-28 m-auto">
         About me
       </p>

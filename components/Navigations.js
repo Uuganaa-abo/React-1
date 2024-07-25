@@ -3,19 +3,19 @@ const { default: Link } = require("next/link");
 const items = [
   {
     name: "About",
-    link: "/About",
+    link: "#about",
   },
   {
     name: "Work",
-    link: "/work",
+    link: "#work",
   },
   {
     name: "Testimonials",
-    link: "/testimonials",
+    link: "#testimonials",
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
 ];
 

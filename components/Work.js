@@ -26,7 +26,7 @@ const workData = [
 ];
 export function Work() {
     return (
-        <main className="mt-16 max-w-6xl mx-auto">
+        <section id="work" className="mt-16 max-w-6xl mx-auto">
             <div className="flex justify-center mb-4">
                 <Tag name="Work" />
             </div>
@@ -37,7 +37,7 @@ export function Work() {
                         <WorkCard key={work.title} work={work} isReverse={index % 2 === 1} />
                     ))}
             </div>
-        </main>
+        </section>
     );
 }
 function WorkCard({ isReverse = false, work }) {

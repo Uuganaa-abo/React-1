@@ -6,7 +6,7 @@ import Icons from "./Icons";
 
 export function Footer() {
   return (
-    <main className="py-16 px-4">
+    <main id="contact" className="py-16 px-4">
       <div className=" mx-auto">
         <div className="w-32 text-center bg-gray-300 rounded-xl px-5 py-1 font-normal text-sm text-gray-600 mx-auto mb-4">
           Get in touch

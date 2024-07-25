@@ -13,6 +13,16 @@ export function Header() {
   //   setIsOpen(!isOpen);
   // };
 
+  const [dark, setDark] = useState(false);
+  function darkOn() {
+    setDark(true);
+    document.documentElement.classList.add('dark')
+  }
+  function darkOff() {
+    setDark(false);
+    document.documentElement.classList.remove('dark')
+  }
+  console.log({dark})
   return (
     <div className="flex justify-between bg-slate-200 text-white sticky top-0 z-50 lg:p-1">
       <div className="font-extrabold text-2xl text-black">&lt;SS/&gt;</div>
@@ -22,14 +32,18 @@ export function Header() {
         </div>
 
         <div className="hidden lg:flex gap-10">
+          <button onClick={darkOff} className={dark ? "block" : "hidden"}>
+            
           <FiSun
             id="White"
             className="text-[black] size-10"
-            onClick={() => {
-              document.getElementById("White").style.display = "none, bg";
-            }}
+            
           />
+          </button>
+          <button onClick={darkOn} className={dark ? "hidden" : "block"}>
+
           <FiMoon  className="size-10"/>
+          </button>
           <button className="bg-slate-800 text-white rounded-xl p-2">
             Dowload CV
           </button>

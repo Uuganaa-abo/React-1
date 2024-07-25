@@ -36,8 +36,8 @@ const experiences = [
 ];
 export default function Experience() {
   return (
-    <main className="mt-16">
-      <div className="w-[100%] bg-gray-50 py-5 flex flex-col items-center">
+    <main id="testimonials" className="mt-16 dark:bg-black dark:text-white">
+      <div className="w-[100%] bg-gray-50 py-5 flex flex-col items-center dark:bg-black">
         <div>
           <p className="text-center bg-gray-300 rounded-xl px-5 py-1 font-normal text-sm text-gray-600 w-28 m-auto">
             Experience
@@ -46,7 +46,7 @@ export default function Experience() {
             Here is a quick summary of my most recent experiences:
           </p>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 dark:bg-black dark:text-white">
           {experiences.map((experience, index) => (
             <div key={index}>
               <Work props={experience} />
